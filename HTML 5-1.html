@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Java Script Testing</title>
+    <!--<script src="script.js"></script>-->
+    <style>
+        body{
+            line-height: 2em;
+        }
+        p {
+            color: gray;
+        }
+        #name{
+            color: #53A0D3
+    }
+        
+    </style>
+</head>
+
+<body>
+    <h1 id="name">PlaceHolder</h1>
+    <p id="todayDate"></p>
+    <p id="stuff">This should change.</p>
+    <button onclick="change()">Change that</button>
+<script>
+    var todayDate= new Date();
+    document.getElementById("todayDate").innerHTML=todayDate;
+    document.getElementById("name").innerHTML="Hello, Matt";
+    
+    function change() {
+        document.getElementById("stuff").innerHTML="It changed!";
+        alert("button works");
+    }
+</script>
+</body>
+</html>
+    
