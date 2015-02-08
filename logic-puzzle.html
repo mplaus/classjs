@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Page Title</title>
+    <script>
+        teams = new Array();
+        teams = ["Braves", "Yankees", "Nationals"];
+        wins = [62, 58,66];
+        losses = [5, 89, 56];
+   
+        var tempLeader = 0;
+        var tempHighWins = 0;
+       
+       for (var i=0; i<teams.length; i++){
+         if (wins[i]>= tempHighWins) {
+            tempHighWins = wins[i];
+            tempLeader = i;
+         }
+       }
+         console.log(tempLeader);
+        
+        
+        
+        
+        
+       // var mostWins = 0
+       
+         
+        /*for (var i=0; i<teams.length; i++){
+            if(wins[i] > mostWins) {
+                mostWins = wins[i];
+                leadTeam = teams[i];
+                console.log(leadTeam);
+            }
+        }
+        */
+    </script>
+</head>
+
+<body>
+
+
+
+</body>
+</html>
